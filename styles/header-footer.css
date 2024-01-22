@@ -1,0 +1,57 @@
+header {
+    background-color: rgb(155, 158, 155);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    color: black;
+  }
+  
+  .logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+#hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#menu li {
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 32px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+  
