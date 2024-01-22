@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 header {
     background-color: rgb(155, 158, 155);
     display: flex;
@@ -6,11 +12,12 @@ header {
     padding: 10px;
     background: white;
     color: black;
-  }
-  
-  .logo img {
-    max-width: 60px;
+}
+
+.logo img {
+    max-width: 40px;
     height: auto;
+    margin-left: 64px;
 }
 
 #main-nav {
@@ -29,10 +36,12 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
+    margin-right: 64px;
 }
 
 #menu li {
     margin-right: 20px;
+    position: relative;
 }
 
 #menu a {
@@ -44,9 +53,31 @@ header {
     text-decoration: underline;
 }
 
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+#menu li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu li {
+    margin: 0;
+    text-align: center;
+}
+
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #24f2c9;
+    color: #e01a4f;
     text-align: center;
     padding: 32px;
     position: fixed;
@@ -54,4 +85,5 @@ footer {
     left: 0;
     width: 100%;
 }
+
   
