@@ -33,6 +33,9 @@ body {
     object-fit: cover;
 }
 
-.student-card h4 {
-    
+.student-container {
+    background-color: chocolate;
+    display: flex;
+    height: 30rem;
+    width: 30rem;
 }
