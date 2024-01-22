@@ -14,15 +14,29 @@
   font-weight: normal;
 }
 
+.partner-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .partner-card {
   align-items: center;
-  background-color: #562994;
   display: flex;
-  height: 300px;
+  height: 370px;
   justify-content: center;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.partner-card:nth-child(2n) {
+  margin-right: 0;
 }
 
 .partner-card h3 {
