@@ -6,6 +6,7 @@ body {
 
 header {
     background-color: rgb(155, 158, 155);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,6 +64,7 @@ header {
     padding: 10px;
     list-style: none;
     margin: 0;
+    z-index: 1;
 }
 
 #menu li:hover .submenu {
