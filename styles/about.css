@@ -1,0 +1,75 @@
+:root {
+    --button-border-radius: 50px;
+}
+
+.hero {
+    background-image: url(../Images/Hero.png);
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    border-width: 191px;
+}
+
+.underline.green {
+    background-color: #448E79;
+    color: #448E79;
+    height: 8px;
+    width: 124px;
+}
+
+.om-oss {
+    width: calc(50vw - 24px);
+    /* position: relative; */
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.student-button {
+    background-color: #CE3452;
+    color: #fff;
+    border: none;
+    padding: 0;
+    height: 50px;
+    width: 191px;
+    font-size: 18px;
+    border-radius: var(--button-border-radius);
+    font-weight: bold;
+
+}
+
+.contact-button {
+    color: #EF4E6D;
+    border: 2px solid #EF4E6D;
+    padding: 0;
+    height: 50px;
+    width: 191px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: var(--button-border-radius);
+}
+
+.contact-card {
+    border: #CE3452;
+    border-radius: var(--button-border-radius);
+}
+
+.about-student-image {
+    position: absolute;
+    max-height: 50vw;
+    max-width: 50vw;
+    right: 0;
+    top: 0;
+}
