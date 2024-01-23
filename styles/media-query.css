@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+    #menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+}
