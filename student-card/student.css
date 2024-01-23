@@ -15,11 +15,12 @@ body {
     justify-content: center;
 }
 
-.student-container {
+.student-content {
     background-color: #f5e8de;
     display: flex;
     height: 25rem;
     width: 40rem;
+    display: none; 
 }
 
 .sidebar {
@@ -33,13 +34,17 @@ body {
     flex-direction: column;
   }
 
-  .bio {
+  .bio-content {
     background-color: cornsilk;
     border-radius: 10px;
     margin: 16px;
-    padding: 16px;
+    padding: 10px;
     height: 10rem;
     width: 28rem;
+  }
+
+  .bio {
+    font-size: 12px;
   }
 
   .div-row {
