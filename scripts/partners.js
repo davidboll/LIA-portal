@@ -12,9 +12,7 @@ $(() => {
     createPartnerCard() {
       $(".partner-cards").append(`
         <div class="partner-card" style="background-color:${this.bgColor};">
-          <div class="center-container">
             <h3 class="job-title">${this.jobpost}</h3>
-          </div>
             <h5 class="partner-name">/ ${this.name}</h5>
         </div>
       `);
