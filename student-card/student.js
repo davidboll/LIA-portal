@@ -12,6 +12,7 @@ $(() => {
         email,
         phone,
         social,
+        image,
     ) {
         this.ID = ID;
         this.name = name;
@@ -24,7 +25,8 @@ $(() => {
         this.skills = skills;
         this.email = email;
         this.phone = phone;
-        this.social =social;
+        this.social = social;
+        this.image = image;
     }
 
     Student.prototype.createStudentContent = function () {
@@ -33,7 +35,31 @@ $(() => {
         `);
 
         $('.goals').append(`
-        <p id="goals">${this.goals}</p>`)
+        <p id="goals">${this.goals}</p>`);
+
+        $('.skills').append(`
+        <p id="skills">Languages we have studied so far:</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        <ul> `);
+
+        $('.sidebar').append(`
+        <div class="img-wrapper">
+            <img class="img" src="${this.image}" alt="avatar">
+        </div>
+        <div class="info-wrapper">
+            <h4>${this.name}</h4>
+            <p><b>Age:</b> ${this.age}</p>
+            <p><b>From:</b> ${this.location}</p>
+            <p><b>Education:</b> ${this.education}</p>
+            <p><b>Language:</b> ${this.languages}</p>
+        </div>
+
+        `);
+
+
     }
 
     $('.student-card').on("click", (e) => {
@@ -76,10 +102,11 @@ $(() => {
         "HTML/CSS, JavaScript, WordPress",
         "z.ibrahimovic@cmeducation.se",
         "0731231212",
-        "facebook"
+        "facebook",
+        "./images/student.png"
     )
 
-
+    
 
     let studentArray = [zlatan];
 
