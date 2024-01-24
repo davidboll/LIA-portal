@@ -52,7 +52,24 @@ $(() => {
       "Music Lover Wanted - Backend Developer Opportunity!",
       "#1DB954"
     ),
+    new Partner(
+      5,
+      "Google",
+      "hello@googl.com",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png",
+      "Wanna be happy? - Join Google Now!!",
+      "#4285F4"
+    ),
   ];
 
-  partners.forEach((partner) => partner.createPartnerCard());
+  const shuffleCards = (cardsArray) => {
+    for (let i = cardsArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cardsArray[i], cardsArray[j]] = [cardsArray[j], cardsArray[i]];
+    }
+  };
+
+  shuffleCards(partners);
+
+  partners.slice(0, 4).forEach((partner) => partner.createPartnerCard());
 });
