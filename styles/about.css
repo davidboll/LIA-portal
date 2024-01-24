@@ -49,12 +49,13 @@ h2 {
     font-size: 18px;
     border-radius: var(--button-border-radius);
     font-weight: bold;
-
+    margin-right: 16px;
 }
 
 .contact-button {
     color: #EF4E6D;
     border: 2px solid #EF4E6D;
+    background-color: #fff;
     padding: 0;
     height: 50px;
     width: 191px;
