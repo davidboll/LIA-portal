@@ -72,6 +72,18 @@ $(() => {
     }
   });
 
+  $("#close-popup").click(() => {
+    $("#popup-overlay, #partner-popup").addClass("hidden");
+  });
+
+  $("#popup-overlay").click(() => {
+    $("#popup-overlay, #partner-popup").addClass("hidden");
+  });
+
+  $("#partner-popup").click((event) => {
+    event.stopPropagation();
+  });
+
   partners.forEach((partner) => {
     partner.createPartnerCard();
     $(".partner-cards .partner-card:last").data("id", partner.id);
