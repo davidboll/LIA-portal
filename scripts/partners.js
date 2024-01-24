@@ -11,11 +11,11 @@ $(() => {
 
     createPartnerCard() {
       $(".partner-cards").append(`
-        <div class="partner-card" style="background-color:${this.bgColor};">
-            <h3 class="job-title">${this.jobpost}</h3>
-            <h5 class="partner-name">/ ${this.name}</h5>
-        </div>
-      `);
+    <div class="partner-card" data-id="${this.id}" style="background-color:${this.bgColor};">
+        <h3 class="job-title">${this.jobpost}</h3>
+        <h5 class="partner-name">/ ${this.name}</h5>
+    </div>
+  `);
     }
   }
 
@@ -55,4 +55,25 @@ $(() => {
   ];
 
   partners.forEach((partner) => partner.createPartnerCard());
+
+  function showPopup(partner) {
+    $("#popup-name").text(partner.name);
+    $("#popup-jobpost").text(partner.jobpost);
+    $("#popup-email").text(partner.email);
+    $("#popup-logo").attr("src", partner.logo);
+    $("#popup-overlay, #partner-popup").removeClass("hidden");
+  }
+
+  $(".partner-cards").on("click", ".partner-card", function () {
+    const partnerId = $(this).data("id");
+    const partner = partners.find((p) => p.id === partnerId);
+    if (partner) {
+      showPopup(partner);
+    }
+  });
+
+  partners.forEach((partner) => {
+    partner.createPartnerCard();
+    $(".partner-cards .partner-card:last").data("id", partner.id);
+  });
 });
