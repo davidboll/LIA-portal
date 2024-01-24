@@ -12,15 +12,17 @@
 }
 
 .partner-card {
-  position: relative; /* Add this line */
   align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   height: 370px;
   justify-content: center;
-  overflow: hidden;
-  width: calc(100%); /* Full width for mobile, minus margin */
   margin-bottom: 20px;
-  box-sizing: border-box;
+  overflow: hidden;
+
+  position: relative;
+  width: calc(100%);
 }
 
 .job-title {
@@ -46,6 +48,32 @@
   text-align: right;
 }
 
+#popup-overlay {
+  background-color: #00000050;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+}
+
+#partner-popup {
+  background-color: #fff;
+  border-radius: 10px;
+  left: 50%;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
 /* Media query for screens wider than 991px */
 @media (min-width: 991px) {
   .partner-card {
@@ -54,5 +82,9 @@
   }
   .partner-card:nth-of-type(2n) {
     margin-right: 0;
+  }
+
+  #partner-popup {
+    width: 780px;
   }
 }
