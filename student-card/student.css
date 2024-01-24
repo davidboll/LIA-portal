@@ -15,7 +15,7 @@ body {
     justify-content: center;
 }
 
-.student-content {
+.student-popup {
     background-color: #f5e8de;
     display: flex;
     height: 25rem;

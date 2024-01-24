@@ -31,20 +31,35 @@ $(() => {
         $('.bio-content').append(`
         <p class="bio">${this.bio}</p>
         `);
-
-        $('.student-card').append(`
-        <button>show popup</button>  
-        `) 
-
-        $('.student-card').on("click", () => {
-            togglePopup();
-        })
     }
 
-    function togglePopup() { 
-        $(".student-content").toggle(); 
-    } 
-    
+    $('.student-card').on("click", (e) => {
+        // Check if the popup is not visible before showing it
+        if (!$('.student-popup').hasClass('activePopup')) {
+            showPopup();
+        }
+        e.stopPropagation(); // Prevent the click event from propagating to document
+    });
+
+    // Bind a click event to the entire document
+    $(document).on('click', (e) => {
+        // Check if the clicked element is not part of the active popup
+        if (!$(e.target).closest('.activePopup').length) {
+            hidePopup();
+        }
+    });
+
+    function showPopup() {
+        $(".student-popup").show().addClass('activePopup'); // Add a class to identify the active popup
+        $('.student-card').hide();
+    }
+
+    function hidePopup() {
+        $(".student-popup").hide().removeClass('activePopup'); // Remove the class on hide
+        $('.student-card').show();
+    }
+
+
 
     let zlatan = new Student(
         "1",
