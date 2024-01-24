@@ -24,7 +24,7 @@ $(() => {
       1,
       "Volvo",
       "hello@volvo.se",
-      "./images/volvo.png",
+      "./images/logo-volvo.png",
       "Driving Innovation - Software Engineer Wanted!",
       "#FFD700"
     ),
@@ -32,7 +32,7 @@ $(() => {
       2,
       "HM Home",
       "hello@hm.se",
-      "./imges/hm.png",
+      "./images/logo-hm.png",
       "E-commerce Wizard Wanted - Frontend Developer Opportunity!",
       "#448e79"
     ),
@@ -40,7 +40,7 @@ $(() => {
       3,
       "IKEA",
       "hello@ikea.se",
-      "./images/ikea.png",
+      "./images/logo-ikea.png",
       "Join our team - Fullstack Developer Wanted!",
       "#0058a3"
     ),
@@ -48,7 +48,7 @@ $(() => {
       4,
       "Spotify",
       "hello@spotify",
-      "./images/spotify.png",
+      "./images/logo-spotify.png",
       "Music Lover Wanted - Backend Developer Opportunity!",
       "#1DB954"
     ),
@@ -56,7 +56,7 @@ $(() => {
       5,
       "Google",
       "hello@googl.com",
-      "./images/google.png",
+      "./images/logo-google.png",
       "Wanna be happy? - Join Google Now!!",
       "#4285F4"
     ),
