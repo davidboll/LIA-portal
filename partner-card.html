@@ -8,8 +8,39 @@
     <script src="./scripts/jquery-3.7.1.js" defer></script>
     <script src="./scripts/partners.js" defer></script>
     <script src="./scripts/partner-card.js" defer></script>
+    <script src="./scripts/mobile-menu.js" defer></script>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header-footer.css" />
+    <link rel="stylesheet" href="./styles/media-query.css" />
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./Images/logo.ico" /></a>
+      </div>
+      <nav id="main-nav">
+        <div id="hamburger-menu">&#9776;</div>
+        <ul id="menu">
+          <li><a href="./html/about.html">About us</a></li>
+          <li><a href="">Contact</a></li>
+          <li class="portal-item">
+            <a href="">Portal</a>
+            <ul class="submenu">
+              <li><a href="">students</a></li>
+              <li><a href="">companies</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="partner-cards"></div>
+    <!-- <footer>
+      <img
+        class="footer-logo"
+        src="./Images/footer-logo.png"
+        alt="Footer Image" />
+      <span class="footer-text">&copy; 2024</span>
+    </footer> -->
   </body>
 </html>
