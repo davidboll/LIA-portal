@@ -29,8 +29,11 @@ $(() => {
 
     Student.prototype.createStudentContent = function () {
         $('.bio-content').append(`
-        <p class="bio">${this.bio}</p>
+        <p id="bio">${this.bio}</p>
         `);
+
+        $('.goals').append(`
+        <p id="goals">${this.goals}</p>`)
     }
 
     $('.student-card').on("click", (e) => {

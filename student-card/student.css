@@ -20,13 +20,21 @@ body {
     display: flex;
     height: 25rem;
     width: 40rem;
-    display: none; 
+    /* display: none;  */
 }
 
 .sidebar {
     background-color: rgb(125, 190, 170);
     flex: 0 0 25%;
     padding: 24px;
+  }
+
+  .wrapper {
+    margin: 16px;
+  }
+
+  h5 {
+    margin: 0;
   }
 
   .div-column {
@@ -37,35 +45,30 @@ body {
   .bio-content {
     background-color: cornsilk;
     border-radius: 10px;
-    margin: 16px;
     padding: 10px;
-    height: 10rem;
+    height: 11rem;
     width: 28rem;
   }
 
-  .bio {
+  #bio {
     font-size: 12px;
   }
 
   .div-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  .goals {
+  .goals, .skills {
     background-color: cornsilk;
     border-radius: 10px;
-    margin: 16px;
+    margin: 16px 0 0 0;
     padding: 16px;
-    height: 10rem;
+    height: 11rem;
     width: 13rem;
   }
 
-  .skills {
-    background-color: cornsilk;
-    border-radius: 10px;
-    margin: 16px;
-    padding: 16px;
-    height: 10rem;
-    width: 13rem;
-  }
+#goals {
+  font-size: 12px;
+}
+
