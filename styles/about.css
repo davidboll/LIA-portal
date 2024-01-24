@@ -5,6 +5,7 @@
 .hero {
     background-image: url(../Images/Hero.png);
     background-size: cover;
+    background-position: center;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -13,9 +14,11 @@
 
 main {
     position: relative;
+
 }
 
-h2 {
+h1 {
+    font-size: 1.875rem;
     text-align: center;
     border-width: 191px;
 }
@@ -30,11 +33,12 @@ h2 {
 .om-oss {
     width: calc(50vw - 24px);
     /* position: relative; */
-    height: 50vw;
+    /* min-height: 50vw; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 24px;
+    padding-top: 5vw;
 }
 
 .student-button {
@@ -47,12 +51,13 @@ h2 {
     font-size: 18px;
     border-radius: var(--button-border-radius);
     font-weight: bold;
-
+    margin-right: 16px;
 }
 
 .contact-button {
     color: #EF4E6D;
     border: 2px solid #EF4E6D;
+    background-color: #fff;
     padding: 0;
     height: 50px;
     width: 191px;
@@ -68,8 +73,32 @@ h2 {
 
 .about-student-image {
     position: absolute;
-    max-height: 50vw;
+    height: 50vw;
+    max-height: 600px;
+
     max-width: 50vw;
     right: 0;
     top: 0;
+}
+
+@media screen and (max-width: 991px) {
+    .about-student-image {
+        display: none;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .om-oss {
+        align-items: center;
+        width: auto;
+        margin: 50px;
+        padding-top: 0;
+    }
+
+    button {
+        margin: 16px;
+    }
 }
