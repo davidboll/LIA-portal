@@ -24,6 +24,10 @@ html {
   height: 100vh;
 }
 
+.partners {
+  text-align: center;
+}
+
 h3.section-title {
   font-family: "Inter";
   font-size: 2.25rem;
@@ -33,6 +37,26 @@ h3.section-title {
   text-decoration: underline;
   text-decoration-thickness: 8px;
   text-underline-offset: 16px;
+}
+
+button.see-all {
+  background-color: #cf3452;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-weight: normal;
+  height: 50px;
+  margin: 30px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 190px;
+}
+
+button.see-all:hover {
+  background-color: #b42e49;
 }
 
 .partners .section-title {

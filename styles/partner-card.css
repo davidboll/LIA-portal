@@ -70,11 +70,15 @@
   z-index: 1000;
 }
 
+#popup-logo {
+  margin: 0 auto;
+  max-height: 50px;
+}
+
 .hidden {
   display: none;
 }
 
-/* Media query for screens wider than 991px */
 @media (min-width: 991px) {
   .partner-card {
     width: calc(50% - 10px);
