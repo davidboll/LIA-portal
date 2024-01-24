@@ -17,7 +17,8 @@ main {
 
 }
 
-h2 {
+h1 {
+    font-size: 1.875rem;
     text-align: center;
     border-width: 191px;
 }
@@ -32,11 +33,12 @@ h2 {
 .om-oss {
     width: calc(50vw - 24px);
     /* position: relative; */
-    min-height: 50vw;
+    /* min-height: 50vw; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 24px;
+    padding-top: 5vw;
 }
 
 .student-button {
@@ -71,7 +73,9 @@ h2 {
 
 .about-student-image {
     position: absolute;
-    max-height: 50vw;
+    height: 50vw;
+    max-height: 600px;
+
     max-width: 50vw;
     right: 0;
     top: 0;
@@ -91,6 +95,7 @@ h2 {
         align-items: center;
         width: auto;
         margin: 50px;
+        padding-top: 0;
     }
 
     button {
