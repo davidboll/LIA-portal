@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-Regular.ttf");
+  font-weight: normal;
+}
+
+.partner-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1440px;
+}
+
+.partner-card {
+  position: relative; /* Add this line */
+  align-items: center;
+  display: flex;
+  height: 370px;
+  justify-content: center;
+  overflow: hidden;
+  width: calc(100%); /* Full width for mobile, minus margin */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.partner-card h3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 2.375rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.partner-card h5 {
+  bottom: 10px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  text-align: right;
+}
+
+/* Media query for screens wider than 991px */
+@media (min-width: 991px) {
+  .partner-card {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+  }
+  .partner-card:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
