@@ -76,6 +76,14 @@
   max-height: 50px;
 }
 
+#popup-jobpost {
+  font-style: italic;
+}
+
+#popup-jobdescription {
+  line-height: 1.5;
+}
+
 .hidden {
   display: none;
 }
