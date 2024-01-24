@@ -80,11 +80,11 @@ $(() => {
   partners.slice(0, 4).forEach((partner) => partner.createPartnerCard());
 
   function showPopup(partner) {
+    $("#popup-logo").attr("src", partner.logo);
     $("#popup-name").text(partner.name);
-    $("#popup-jobpost").text(partner.jobpost);
+    $("#popup-jobpost").text(`- ${partner.jobpost}`);
     $("#popup-jobdescription").text(partner.jobdescription);
     $("#popup-email").text(partner.email);
-    $("#popup-logo").attr("src", partner.logo);
     $("#popup-overlay, #partner-popup").removeClass("hidden");
   }
 
