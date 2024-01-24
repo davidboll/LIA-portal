@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -128,4 +129,81 @@
       <span class="footer-text">&copy; 2024</span>
     </footer>
   </body>
+=======
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIA - Portal</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/header-footer.css" />
+  <link rel="stylesheet" href="./styles/media-query.css" />
+  <link rel="stylesheet" href="./styles/partner-card.css" />
+  <link rel="stylesheet" href="./styles/student-slider.css">
+
+  <script src="./scripts/jquery-3.7.1.js" defer></script>
+  <script src="./scripts/mobile-menu.js" defer></script>
+  <script src="./scripts/partners.js" defer></script>
+  <script src="./scripts/student-slider.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="./index.html"><img src="./Images/logo.ico" /></a>
+    </div>
+    <nav id="main-nav">
+      <div id="hamburger-menu">&#9776;</div>
+      <ul id="menu">
+        <li><a href="./html/about.html">About us</a></li>
+        <li><a href="">Contact</a></li>
+        <li class="portal-item">
+          <a href="">Portal</a>
+          <ul class="submenu">
+            <li><a href="./html/student-page.html">students</a></li>
+            <li><a href="">companies</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="slideshow-container"></div>
+  <div class="mySlides fade">
+    <img src="./Images/student-1.png">
+    <img src="./Images/student-2.png">
+    <img src="./Images/student-3.png">
+    <img src="./Images/student-4.png">
+    
+  </div>
+  <div class="mySlides fade">
+    <img src="./Images/student-5.png">
+    <img src="./Images/student-6.png">
+    <img src="./Images/student-7.png">
+    <img src="./Images/student-8.png">
+  </div>
+  <div class="mySlides fade">
+    <img src="./Images/student-9.png">
+    <img src="./Images/student-10.png">
+    <img src="./Images/student-11.png">
+    <img src="./Images/student-12.png">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+  <section class="partners">
+    <h3 class="section-title">Job listings</h3>
+    <div class="partner-cards"></div>
+  </section>
+  <footer>
+    <img class="footer-logo" src="./Images/footer-logo.png" alt="Footer Image" />
+    <span class="footer-text">&copy; 2024</span>
+  </footer>
+</body>
+>>>>>>> student-slider
 </html>
+
+
