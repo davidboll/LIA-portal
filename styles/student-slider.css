@@ -1,7 +1,7 @@
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin: 32px;
 }
 
 .mySlides {
@@ -19,7 +19,7 @@
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -300px;
+  margin-top: -80px;
   padding: 16px;
   font-weight: bold;
   font-size: 18px;

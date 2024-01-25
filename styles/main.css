@@ -24,6 +24,16 @@ html {
   height: 100vh;
 }
 
+.banner {
+  background-image: url(../Images/banner.png);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .partners {
   text-align: center;
 }
