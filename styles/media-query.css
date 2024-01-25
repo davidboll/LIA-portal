@@ -1,9 +1,19 @@
 @media screen and (max-width: 600px) {
+
     .logo img {
         max-width: 40px;
         height: auto;
         margin-left: 30px;
     }
+
+    .banner {
+        height: 100px;
+      }
+    
+      .logo img {
+        max-width: 30px;
+        margin-left: 10px;
+      }
 
     #menu {
         flex-direction: column;
@@ -42,5 +52,6 @@
         font-size: 24px;
         cursor: pointer;
     }
+    
 }
 
