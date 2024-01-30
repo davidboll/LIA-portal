@@ -1,54 +1,110 @@
-.slideshow-container {
-  max-width: 1000px;
+.student-slider-container {
+ height: 250px;
+}
+
+.student-slider {
   position: relative;
-  margin: 32px;
-  overflow: hidden;
-}
-
-.mySlides {
-  text-align: center;
-}
-
-.mySlides img {
-  width: 24%;
-  border-radius: 10%;
-  display: inline-block;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  width: auto;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 14px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   user-select: none;
-  transform: translateY(-50%);
 }
 
-.prev {
-  left: 0;
+.student-slider .student-picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  z-index: -1;  
+  opacity: 0;
 }
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.student-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.student-picture.active {
+  opacity: 1;
+  z-index: 99;
+  box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.5);
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.student-picture.prev {
+  z-index: 2;
+  opacity: 0.5;
+  transform: translate(-125%, -50%);
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.student-picture.next {
+  z-index: 2;
+  opacity: 0.5;
+  transform: translate(25%, -50%);
 }
 
+.student-slider .button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  z-index: 99; /* 99 to make whole button appear above active picture*/
+}
+
+.button-container .button {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.75;
+  transition: all 0.5s ease-in-out;
+}
+
+.button-container .button:hover {
+  opacity: 1;
+}
+
+.button-container .button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+  float: left;
+}
+
+.button-container .button:nth-child(2) {
+  float: right;
+}
+
+@media screen and (max-width:991px) {
+
+  .student-slider .student-picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  .student-slider-container {
+    height: 150px;
+    width: auto;
+   }
+
+   .student-slider .button-container {
+    width: 150px;
+   }
+  
+}
