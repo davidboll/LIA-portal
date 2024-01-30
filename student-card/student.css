@@ -37,35 +37,30 @@ body {
     margin: 0;
   }
 
-  .div-column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bio-content {
+  .bio {
     background-color: cornsilk;
     border-radius: 10px;
-    padding: 10px;
+    padding: 16px;
     height: 11rem;
-    width: 28rem;
-  }
-
-  #bio, #goals, #skills {
-    font-size: 13px;
+    width: auto;
   }
 
   .div-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .goals, .skills {
     background-color: cornsilk;
-    border-radius: 10px;
+    border-radius: 16px;
     margin: 16px 0 0 0;
     padding: 16px;
-    height: 11rem;
-    width: 13rem;
+    height: auto;
+    width: 14rem;
+  }
+
+  .bio p, .goals p, .skills p, ul {
+    font-size: 13px;
   }
 
   .img-wrapper {
@@ -83,7 +78,7 @@ body {
     object-fit: cover;
   }
 
-.info-wrapper p {
+.info-content p {
   margin: 0 0 6px;
   font-size: 12px;
 }
