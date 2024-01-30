@@ -4,9 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LIA - Portal</title>
-    <link rel="stylesheet" href="./styles/header-footer.css">
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/header-footer.css" />
+    <link rel="stylesheet" href="./styles/media-query.css" />
+    <link rel="stylesheet" href="./styles/org-slider.css" />
+    <link rel="stylesheet" href="./styles/partner-card.css" />
+    <link rel="stylesheet" href="./styles/student-slider.css">
 
     <script src="./scripts/jquery-3.7.1.js" defer></script>
+    <script src="./scripts/mobile-menu.js" defer></script>
+    <script src="./scripts/org-slider.js" defer></script>
+    <script src="./scripts/partners.js" defer></script>
+    <script src="./scripts/student-slider.js" defer></script>
   </head>
   <body>
     <header>
@@ -16,16 +25,136 @@
       <nav id="main-nav">
         <div id="hamburger-menu">&#9776;</div>
         <ul id="menu">
-          <li><a href="">About us</a></li>
+          <li><a href="./html/about.html">About us</a></li>
           <li><a href="">Contact</a></li>
-          <li><a href="">Portal</a></li>
-            <ul>
+          <li class="portal-item">
+            <a href="">Portal</a>
+            <ul class="submenu">
               <li><a href="">students</a></li>
               <li><a href="">companies</a></li>
             </ul>
+          </li>
         </ul>
       </nav>
     </header>
-    <footer>&copy; 2024</footer>
+    <section class="banner">
+    </section>
+    <div class="slideshow-container"></div>
+    <div class="mySlides fade">
+      <img src="./Images/student-1.png">
+      <img src="./Images/student-2.png">
+      <img src="./Images/student-3.png">
+      <img src="./Images/student-4.png"> 
+    </div>
+    <div class="mySlides fade">
+      <img src="./Images/student-5.png">
+      <img src="./Images/student-6.png">
+      <img src="./Images/student-7.png">
+      <img src="./Images/student-8.png">
+    </div>
+    <div class="mySlides fade">
+      <img src="./Images/student-9.png">
+      <img src="./Images/student-10.png">
+      <img src="./Images/student-11.png">
+      <img src="./Images/student-12.png">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div style="text-align:center">
+    <button class="see-all">SEE ALL</button>
+  </div>
+    <section class="partners">
+      <h3 class="section-title">Job listings</h3>
+      <div class="partner-cards"></div>
+      <button class="see-all">SEE ALL</button>
+    </section>
+
+    <div id="popup-overlay" class="hidden"></div>
+    <div id="partner-popup" class="hidden">
+      <div class="popup-content">
+        <img id="popup-logo" src="" alt="logo" />
+        <h3 id="popup-name"></h3>
+        <p id="popup-jobpost"></p>
+        <p id="popup-jobdescription"></p>
+        <p id="popup-email"></p>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+
+    <div class="org-slider-container">
+      <div class="org-slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img
+              src="./Images/org-logos/arvikakommun-logo.png"
+              alt="Arvika kommun" />
+          </div>
+          <div class="slide">
+            <img src="./Images/org-logos/DICE-logo.png" alt="DICE" />
+          </div>
+          <div class="slide">
+            <img src="./Images/org-logos/iptor-logo.png" alt="Iptor" />
+          </div>
+          <div class="slide">
+            <img src="./Images/org-logos/lybe-logo.png" alt="Lybe" />
+          </div>
+          <div class="slide">
+            <img
+              src="./Images/org-logos/nordicwebteam-logo.png"
+              alt="Nordic Web Team" />
+          </div>
+          <div class="slide">
+            <img
+              src="./Images/org-logos/star-republic-logo.png"
+              alt="Star Republic" />
+          </div>
+          <div class="slide">
+            <img
+              src="./Images/org-logos/vastra_gotalandsregionen-logo.png"
+              alt="Västra götalandsregionen" />
+          </div>
+
+          <div class="slide">
+            <img
+              src="./Images/org-logos/arvikakommun-logo.png"
+              alt="Arvika kommun" />
+          </div>
+          <div class="slide">
+            <img src="./Images/org-logos/DICE-logo.png" alt="DICE" />
+          </div>
+          <div class="slide">
+            <img src="./Images/org-logos/iptor-logo.png" alt="Iptor" />
+          </div>
+          <div class="slide">
+            <img src="./Images/org-logos/lybe-logo.png" alt="Lybe" />
+          </div>
+          <div class="slide">
+            <img
+              src="./Images/org-logos/nordicwebteam-logo.png"
+              alt="Nordic Web Team" />
+          </div>
+          <div class="slide">
+            <img
+              src="./Images/org-logos/star-republic-logo.png"
+              alt="Star Republic" />
+          </div>
+          <div class="slide">
+            <img
+              src="./Images/org-logos/vastra_gotalandsregionen-logo.png"
+              alt="Västra götalandsregionen" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <img
+        class="footer-logo"
+        src="./Images/footer-logo.png"
+        alt="Footer Image" />
+      <span class="footer-text">&copy; 2024</span>
+    </footer>
   </body>
-</html>
+
+
