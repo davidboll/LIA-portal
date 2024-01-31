@@ -24,6 +24,11 @@ html {
   height: 100vh;
 }
 
+a {
+  color: #cf3452;
+  text-decoration: none;
+}
+
 .banner {
   background-image: url(../Images/hero-welcome.jpeg);
   background-size: cover;
@@ -129,6 +134,15 @@ a.link-button.secondary:hover {
   background-color: #b42e49;
   border: 3px solid #b42e49;
   color: #fff;
+}
+
+button.close {
+  background-color: #eee;
+  color: #000;
+}
+
+button.close:hover {
+  background-color: #e6e6e6;
 }
 
 .partners .section-title {
