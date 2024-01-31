@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
 
     .logo img {
         max-width: 40px;
@@ -6,32 +6,24 @@
         margin-left: 30px;
     }
 
-    .banner {
-        height: 100px;
-      }
-    
-      .logo img {
-        max-width: 30px;
-        margin-left: 10px;
-      }
-
     #menu {
         flex-direction: column;
         justify-content: flex-start;
         margin-left: 28px;
-        position: absolute;
-        top: 60px;
+        position: relative;
+        top: 0;
         margin: 5px;
-        right: 8px;
+        right: 0;
         background-color: rgb(155, 158, 155);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 40%;
+        width: 100%;
         display: none;
     }
 
     #menu li {
         text-align: center;
         margin-bottom: 10px;
+        position: relative;
     }
 
     #menu a {
@@ -39,11 +31,40 @@
         padding: 10px;
         text-decoration: none;
         color: black;
+        position: relative;
+    }
+
+    #menu a:hover {
+        text-decoration: underline;
     }
 
     .submenu {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        list-style: none;
+        margin: 0;
+        z-index: 1;
+        width: 100%;
+    }
+
+    #menu li:hover .submenu {
         display: flex;
         flex-direction: column;
+        position: relative;
+    }
+
+    .submenu li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .banner {
+        height: 100px;
     }
 
     #hamburger-menu {
@@ -52,6 +73,4 @@
         font-size: 24px;
         cursor: pointer;
     }
-    
 }
-
