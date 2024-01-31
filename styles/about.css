@@ -2,6 +2,24 @@
     --button-border-radius: 50px;
 }
 
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-Medium.ttf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-Bold.ttf");
+    font-weight: bold;
+}
+
 .hero {
     background-image: url(../Images/Hero.png);
     background-size: cover;
