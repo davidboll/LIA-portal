@@ -24,6 +24,11 @@ html {
   height: 100vh;
 }
 
+a {
+  color: #cf3452;
+  text-decoration: none;
+}
+
 .banner {
   background-image: url(../Images/banner.png);
   background-size: cover;
@@ -36,6 +41,8 @@ html {
 }
 
 .partners {
+  background-color: #fafafa;
+  padding: 30px 0;
   text-align: center;
 }
 
@@ -50,8 +57,7 @@ h3.section-title {
   text-underline-offset: 16px;
 }
 
-button.see-all {
-  background-color: #cf3452;
+button {
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -66,8 +72,21 @@ button.see-all {
   width: 190px;
 }
 
+button.see-all {
+  background-color: #cf3452;
+}
+
 button.see-all:hover {
   background-color: #b42e49;
+}
+
+button.close {
+  background-color: #eee;
+  color: #000;
+}
+
+button.close:hover {
+  background-color: #e6e6e6;
 }
 
 .partners .section-title {
