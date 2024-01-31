@@ -30,14 +30,46 @@ a {
 }
 
 .banner {
-  background-image: url(../Images/banner.png);
+  background-image: url(../Images/hero-welcome.jpeg);
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 700px;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 20px;
+}
+
+.banner-content {
+  text-align: left;
+  width: 100%;
+}
+
+.banner-content h1 {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 1.5rem;
+  font-weight: medium;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.button-group button {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  padding-top: 40px;
 }
 
 .partners {
@@ -57,27 +89,53 @@ h3.section-title {
   text-underline-offset: 16px;
 }
 
-button {
+button,
+a.link-button {
+  padding: 8px 20px;
   border: none;
-  border-radius: 50px;
-  color: #fff;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   cursor: pointer;
+  border-radius: 50px;
   font-family: "Inter";
   font-size: 1rem;
   font-weight: normal;
   height: 50px;
-  margin: 30px auto;
-  text-decoration: none;
-  text-transform: uppercase;
+  line-height: 30px;
   width: 190px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-button.see-all {
+button.see-all,
+a.link-button.see-all {
   background-color: #cf3452;
+  border: 3px solid #cf3452;
+  color: #fff;
 }
 
-button.see-all:hover {
+button.see-all:hover,
+a.link-button.see-all:hover {
   background-color: #b42e49;
+  border: 3px solid #b42e49;
+  color: #fff;
+}
+
+button.secondary,
+a.link-button.secondary {
+  background-color: #fff;
+  border: 3px solid #cf3452;
+  color: #000;
+}
+
+button.secondary:hover,
+a.link-button.secondary:hover {
+  background-color: #b42e49;
+  border: 3px solid #b42e49;
+  color: #fff;
 }
 
 button.close {
@@ -91,4 +149,15 @@ button.close:hover {
 
 .partners .section-title {
   text-decoration-color: #faff06;
+}
+
+@media (min-width: 991px) {
+  .banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner-content p {
+    width: 80%;
+  }
 }
