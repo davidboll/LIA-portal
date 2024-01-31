@@ -51,7 +51,7 @@ $(() => {
     new Partner(
       4,
       "Spotify",
-      "hello@spotify",
+      "hello@spotify.se",
       "./images/logo-spotify.png",
       "Music Lover Wanted - Backend Developer Opportunity!",
       "Spotify is looking for a Backend Developer with a passion for music and technology. In this role, you'll be at the heart of our mission to connect millions of listeners with the music they love. Your responsibilities will include developing and maintaining the server-side logic, ensuring high performance and responsiveness to requests from the front-end. You'll also be involved in integrating the front-end elements built by your teammates into the application. This role is perfect for someone who loves tackling challenging problems and wants to impact how the world experiences music.",
@@ -84,7 +84,7 @@ $(() => {
     $("#popup-name").text(partner.name);
     $("#popup-jobpost").text(`- ${partner.jobpost}`);
     $("#popup-jobdescription").text(partner.jobdescription);
-    $("#popup-email").text(partner.email);
+    $("#popup-email").attr("href", "mailto:" + partner.email);
     $("#popup-overlay, #partner-popup").removeClass("hidden");
   }
 
