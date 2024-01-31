@@ -55,6 +55,8 @@ header {
 }
 
 .submenu {
+    border: 1px solid black;
+    border-radius: 3px;
     display: none;
     position: absolute;
     top: 100%;

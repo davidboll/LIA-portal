@@ -16,6 +16,7 @@
     <script src="./scripts/org-slider.js" defer></script>
     <script src="./scripts/partners.js" defer></script>
     <script src="./scripts/student-slider.js" defer></script>
+    <script src="./scripts/submenu.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,12 +26,13 @@
       <nav id="main-nav">
         <div id="hamburger-menu">&#9776;</div>
         <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./html/about.html">About us</a></li>
           <li><a href="">Contact</a></li>
-          <li class="portal-item">
-            <a href="#">Portal</a>
-            <ul class="submenu">
-              <li><a href="./student-card/student.html">Students</a></li>
+          <li class="portal">
+            <a href="#" id="portal">Portal</a>
+            <ul class="submenu" id="submenu">
+              <li><a href="./html/student-page.html">Students</a></li>
               <li><a href="">Partners</a></li>
             </ul>
           </li>
