@@ -162,6 +162,7 @@ h3.section-title {
 
   .banner-content {
     align-items: flex-start;
+    max-width: 1400px;
   }
 
   .banner-content h1 {
