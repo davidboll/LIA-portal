@@ -52,7 +52,27 @@ body {
     display: flex;
     max-width: 780px;
     /* display: none; */
+/*     height: 80vh;
+    width: 80vw; */
+    position: fixed;
+    z-index: 10;
+    opacity: 1;
 }
+
+.student-popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .sidebar {
     background-color: rgb(125, 190, 170);
@@ -88,12 +108,11 @@ body {
     border-radius: 16px;
     margin: 16px 0 0 0;
     padding: 16px;
-    height: 100%;
     width: 50%;
   }
 
   .bio p, .goals p, .skills p, ul {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .img-wrapper {
