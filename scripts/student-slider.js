@@ -69,4 +69,6 @@ const gotoNum= number => {
   slides[current].classList.add("active");
   slides[prev].classList.add("prev");
   slides[next].classList.add("next");
+
+  studentName.textContent = `Student #${current + 1} Name`;
 }
