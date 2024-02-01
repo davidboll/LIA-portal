@@ -2,6 +2,24 @@
     --button-border-radius: 50px;
 }
 
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-Medium.ttf");
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter/Inter-Bold.ttf");
+    font-weight: bold;
+}
+
 .hero {
     background-image: url(../Images/Hero.png);
     background-size: cover;
@@ -79,6 +97,17 @@ h1 {
     max-width: 50vw;
     right: 0;
     top: 0;
+}
+
+h3.section-title {
+    font-family: "Inter";
+    font-size: 2.25rem;
+    font-weight: normal;
+    padding-bottom: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 8px;
+    text-underline-offset: 16px;
 }
 
 @media screen and (max-width: 991px) {

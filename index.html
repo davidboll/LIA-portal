@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./styles/media-query.css" />
     <link rel="stylesheet" href="./styles/org-slider.css" />
     <link rel="stylesheet" href="./styles/partner-card.css" />
-    <link rel="stylesheet" href="./styles/student-slider.css">
+    <link rel="stylesheet" href="./styles/student-slider.css" />
 
     <script src="./scripts/jquery-3.7.1.js" defer></script>
     <script src="./scripts/mobile-menu.js" defer></script>
     <script src="./scripts/org-slider.js" defer></script>
     <script src="./scripts/partners.js" defer></script>
     <script src="./scripts/student-slider.js" defer></script>
+    <script src="./scripts/submenu.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,73 +26,57 @@
       <nav id="main-nav">
         <div id="hamburger-menu">&#9776;</div>
         <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./html/about.html">About us</a></li>
           <li><a href="">Contact</a></li>
-          <li class="portal-item">
-            <a href="">Portal</a>
-            <ul class="submenu">
-              <li><a href="">students</a></li>
-              <li><a href="">companies</a></li>
+          <li class="portal">
+            <a href="#" id="portal">Portal</a>
+            <ul class="submenu" id="submenu">
+              <li><a href="./html/student-page.html">Students</a></li>
+              <li><a href="">Partners</a></li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section class="banner"></section>
-    
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Vi är <u>changemakers</u></h1>
+        <p>
+          Är ditt företag i behov av spetskompetens inom programmering så har du
+          hamnat rätt! Vår utbildning <strong>Frontend/App Developer</strong></Frontend> har gett oss
+          verktygen för att ta ert projekt till nästa nivå! Hör av dig :)
+        </p>
+        <div class="button-group">
+          <a href="./html/student-page.html" class="link-button see-all">See students</a>
+          <a href="./html/partners.html" class="link-button secondary">See partners</a>
+        </div>
+      </div>
+    </section>
 
-  <section class="students-container">
+    <section class="students-container">
       <h3 class="section-title">Students</h3>
     <section class="student-slider-container">
       <div class="student-slider">
-        <div class="student-picture active"><img src="Images/Student-slider/Student1.png" alt="Student#1">
-          <p class="student-name">Anna Stewart</p>
-        </div>
-        <div class="student-picture next"><img src="Images/Student-slider/student2.png" alt="Student#2">
-          <p class="student-name">John Doe</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student3.png" alt="Student#3">
-          <p class="student-name">Alice Johnson</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student4.png" alt="Student#4">
-          <p class="student-name">Ahmed Hassan</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student5.png" alt="Student#5">
-          <p class="student-name">Eva Martinez</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student6.png" alt="Student#6">
-          <p class="student-name">Mia Johnson</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student7.png" alt="Student#7">
-          <p class="student-name">Bob Smith</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student8.png" alt="Student#8">
-          <p class="student-name">Sophia Kim</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student9.png" alt="Student#9">
-          <p class="student-name">Michael Chen</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student10.png" alt="Student#10">
-          <p class="student-name">Luca Rossi</p>
-        </div>
-        <div class="student-picture"><img src="Images/Student-slider/student11.png" alt="Student#11">
-          <p class="student-name">Yuki Tanaka</p>
-        </div>
-        <div class="student-picture prev"><img src="Images/Student-slider/student12.png" alt="Student#12">
-          <p class="student-name">Emma Anderson</p>
-        </div>
+        <div class="student-picture active"><img src="Images/Student-slider/Student1.png" alt="Student#1"></div>
+        <div class="student-picture next"><img src="Images/Student-slider/student2.png" alt="Student#2"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student3.png" alt="Student#3"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student4.png" alt="Student#4"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student5.png" alt="Student#5"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student6.png" alt="Student#6"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student7.png" alt="Student#7"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student8.png" alt="Student#8"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student9.png" alt="Student#9"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student10.png" alt="Student#10"></div>
+        <div class="student-picture"><img src="Images/Student-slider/student11.png" alt="Student#11"></div>
+        <div class="student-picture prev"><img src="Images/Student-slider/student12.png" alt="Student#12"></div>
           <div class="button-container">  
             <div class="button"><i></i></div>
             <div class="button"><i></i></div>
         </div>
       </div>
     </section>
-    <div class="button-container-seeall">
-      <div>
-        <a href="html/student-page.html"><button class="see-all">SEE ALL</button></a>
-      </div>
-    </div>
   </section>
 
     <section class="partners">
@@ -107,8 +92,10 @@
         <h3 id="popup-name"></h3>
         <p id="popup-jobpost"></p>
         <p id="popup-jobdescription"></p>
-        <p id="popup-email"></p>
-        <button id="close-popup">Close</button>
+        <a target="_blank" id="popup-email">
+          <button class="see-all">Contact us</button>
+        </a>
+        <button class="close" id="close-popup">Close</button>
       </div>
     </div>
 
@@ -186,5 +173,4 @@
       <span class="footer-text">&copy; 2024</span>
     </footer>
   </body>
-
-
+</html>
