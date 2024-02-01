@@ -115,6 +115,10 @@ body {
     font-size: 15px;
   }
 
+  .skills ul {
+    padding-left: 18px;
+  }
+
   .img-wrapper {
     display: inline-block; 
     position: relative; 
@@ -140,5 +144,17 @@ body {
  .student-popup {
   max-width: 400px;
   flex-direction: column;
+ }
+
+ .sidebar {
+  display: flex;
+ }
+
+ .img-wrapper {
+  margin: 4rem 2rem 0 0;
+ }
+
+ .bio {
+  height: auto;
  }
 }
