@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LIA - Students</title>
+    <title>LIA - Portal</title>
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/header-footer.css" />
-    <link rel="stylesheet" href="../styles/media-query.css" />
+    <link rel="stylesheet" href="../styles/media-query.css">
+    <link rel="stylesheet" href="../styles/student-page.css">
 
     <script src="../scripts/jquery-3.7.1.js" defer></script>
     <script src="../scripts/mobile-menu.js" defer></script>
+    <script src="../scripts/student.js" defer></script>
     <script src="../scripts/submenu.js" defer></script>
   </head>
   <body>
@@ -33,6 +35,25 @@
         </ul>
       </nav>
     </header>
+    <section class="student-wrapper">
+      <div class="student-popup-overlay">
+        <div class="student-popup">
+          <div class="sidebar">
+          </div>
+          <div class="wrapper">
+              <div class="bio">
+              </div>
+              <div class="div-row">
+                  <div class="goals">
+                  </div>
+                  <div class="skills">
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </section>
+
     <footer>
       <img
         class="footer-logo"
@@ -41,4 +62,3 @@
       <span class="footer-text">&copy; 2024</span>
     </footer>
   </body>
-</html>
