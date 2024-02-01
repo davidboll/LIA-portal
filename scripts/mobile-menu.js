@@ -16,7 +16,7 @@ $(() => {
     });
 
     $(window).resize(function () {
-        if ($(window).width() > 600) {
+        if ($(window).width() > 991) {
             $('#menu').show();
             $('.submenu').hide();
         } else {

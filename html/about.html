@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lia - About</title>
+    <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/header-footer.css" />
+    <link rel="stylesheet" href="../styles/media-query.css" />
     <link rel="stylesheet" href="../styles/about.css" />
     <link rel="stylesheet" href="../styles/org-slider.css">
     <link rel="stylesheet" href="../styles/student-slider.css">
@@ -12,7 +14,8 @@
 
     <script src="../scripts/jquery-3.7.1.js" defer></script>
     <script src="../scripts/student-slider.js" defer></script>
-
+    <script src="../scripts/mobile-menu.js" defer></script>
+    <script src="../scripts/submenu.js" defer></script>
   </head>
   <body>
     <header>
@@ -22,13 +25,14 @@
       <nav id="main-nav">
         <div id="hamburger-menu">&#9776;</div>
         <ul id="menu">
-          <li><a href="./about.html">About us</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/about.html">About us</a></li>
           <li><a href="">Contact</a></li>
-          <li class="portal-item">
-            <a href="">Portal</a>
-            <ul class="submenu">
-              <li><a href="">students</a></li>
-              <li><a href="">companies</a></li>
+          <li class="portal">
+            <a href="#" id="portal">Portal</a>
+            <ul class="submenu" id="submenu">
+              <li><a href="../html/student-page.html">Students</a></li>
+              <li><a href="">Partners</a></li>
             </ul>
           </li>
         </ul>
@@ -158,6 +162,7 @@
         src="../Images/footer-logo.png"
         alt="Footer Image"
       />
+
       <span class="footer-text">&copy; 2024</span>
     </footer>
   </body>
