@@ -16,6 +16,7 @@
     <script src="./scripts/org-slider.js" defer></script>
     <script src="./scripts/partners.js" defer></script>
     <script src="./scripts/student-slider.js" defer></script>
+    <script src="./scripts/submenu.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,13 +26,14 @@
       <nav id="main-nav">
         <div id="hamburger-menu">&#9776;</div>
         <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./html/about.html">About us</a></li>
           <li><a href="">Contact</a></li>
-          <li class="portal-item">
-            <a href="">Portal</a>
-            <ul class="submenu">
-              <li><a href="">students</a></li>
-              <li><a href="">companies</a></li>
+          <li class="portal">
+            <a href="#" id="portal">Portal</a>
+            <ul class="submenu" id="submenu">
+              <li><a href="./html/student-page.html">Students</a></li>
+              <li><a href="">Partners</a></li>
             </ul>
           </li>
         </ul>
@@ -47,7 +49,7 @@
           verktygen för att ta ert projekt till nästa nivå! Hör av dig :)
         </p>
         <div class="button-group">
-          <a href="./html/studens.html" class="link-button see-all">See students</a>
+          <a href="./html/student-page.html" class="link-button see-all">See students</a>
           <a href="./html/partners.html" class="link-button secondary">See partners</a>
         </div>
       </div>
