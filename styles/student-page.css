@@ -1,8 +1,14 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+.headlines {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.headlines h3 {
+  text-decoration-color: #24f2c9;
+} 
+
+.headlines p {
+  font-size: 1.5rem;
 }
 
 .student-wrapper {
@@ -75,7 +81,8 @@ body {
 
 
 .sidebar {
-    background-color: rgb(125, 190, 170);
+    background-color: #24f2c9;
+    color: rgb(56, 56, 56);
     flex: 0 0 25%;
     padding: 16px;
     padding-bottom: 30px;
@@ -111,8 +118,9 @@ body {
     width: 50%;
   }
 
-  .bio p, .goals p, .skills p, ul {
-    font-size: 15px;
+  .bio p, .goals p, .skills p, .skills ul {
+    font-size: 14px;
+    font-weight: 300;
   }
 
   .skills ul {
@@ -157,4 +165,28 @@ body {
  .bio {
   height: auto;
  }
+}
+
+
+
+
+.hero {
+  background-image: url(../Images/hero-students.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  width: 100%;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 2rem;
 }
