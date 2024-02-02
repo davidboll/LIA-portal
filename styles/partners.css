@@ -25,6 +25,12 @@
   padding: 20px;
 }
 
+.partners p {
+  color: #000;
+  font-family: "Inter";
+  font-size: 1.5rem;
+}
+
 @media (min-width: 991px) {
   .hero {
     height: 400px;
