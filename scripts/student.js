@@ -100,7 +100,7 @@ $(() => {
       "React",
       "z.ibrahimovic@cmeducation.se",
       "0731231212",
-      "../images/Student-slider/Student1.png"
+      "../Images/Student-slider/student1.png"
     ),
     new Student(
       2,
@@ -116,7 +116,7 @@ $(() => {
       "Node.js",
       "john.doe@example.com",
       "555-1234",
-      "../images/Student-slider/student2.png"
+      "../Images/Student-slider/student2.png"
     ),
     new Student(
       3,
@@ -132,7 +132,7 @@ $(() => {
       "Sketch",
       "alice.johnson@example.com",
       "555-5678",
-      "../images/Student-slider/student3.png"
+      "../Images/Student-slider/student3.png"
     ),
     new Student(
       4,
@@ -148,7 +148,7 @@ $(() => {
       "Swift",
       "ahmed.hassan@example.com",
       "555-6789",
-      "../images/Student-slider/student4.png"
+      "../Images/Student-slider/student4.png"
     ),
     new Student(
       5,
@@ -164,7 +164,7 @@ $(() => {
       "React",
       "eva.martinez@example.com",
       "555-4321",
-      "../images/Student-slider/student5.png"
+      "../Images/Student-slider/student5.png"
     ),
     new Student(
       6,
@@ -180,7 +180,7 @@ $(() => {
       "Incident Response",
       "sophia.kim@example.com",
       "555-2345",
-      "../images/Student-slider/student6.png"
+      "../Images/Student-slider/student6.png"
     ),
     new Student(
       7,
@@ -196,7 +196,7 @@ $(() => {
       "SQL",
       "bob.smith@example.com",
       "555-9876",
-      "../images/Student-slider/student7.png"
+      "../Images/Student-slider/student7.png"
     ),
     new Student(
       8,
@@ -212,7 +212,7 @@ $(() => {
       "3D Modeling",
       "mia.johnson@example.com",
       "555-5432",
-      "../images/Student-slider/student8.png"
+      "../Images/Student-slider/student8.png"
     ),
     new Student(
       9,
@@ -228,7 +228,7 @@ $(() => {
       "PyTorch",
       "michael.chen@example.com",
       "555-8765",
-      "../images/Student-slider/student9.png"
+      "../Images/Student-slider/student9.png"
     ),
     new Student(
       10,
@@ -244,7 +244,7 @@ $(() => {
       "Hyperledger Fabric",
       "luca.rossi@example.com",
       "555-7654",
-      "../images/Student-slider/student10.png"
+      "../Images/Student-slider/student10.png"
     ),
     new Student(
       11,
@@ -260,7 +260,7 @@ $(() => {
       "Community Engagement",
       "yuki.tanaka@example.com",
       "555-8765",
-      "../images/Student-slider/student11.png"
+      "../Images/Student-slider/student11.png"
     ),
     new Student(
       12,
@@ -276,7 +276,7 @@ $(() => {
       "Node.js",
       "emma.anderson@example.com",
       "555-9876",
-      "../images/Student-slider/student12.png"
+      "../Images/Student-slider/student12.png"
     ),
   ];
 
