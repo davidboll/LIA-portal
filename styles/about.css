@@ -40,7 +40,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   margin-left: 24px;
-  padding-top: 5vw;
+  padding: 30px 20px 50px 20px;
 }
 
 .student-button {
@@ -71,6 +71,10 @@ h1 {
 .contact-card {
   border: #ce3452;
   border-radius: var(--button-border-radius);
+}
+
+.students-container {
+  padding: 50px 0;
 }
 
 .about-student-image {
