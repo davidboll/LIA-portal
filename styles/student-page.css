@@ -78,7 +78,8 @@ body {
 
 
 .sidebar {
-    background-color: rgb(125, 190, 170);
+    background-color: #24f2c9;
+    color: rgb(56, 56, 56);
     flex: 0 0 25%;
     padding: 16px;
     padding-bottom: 30px;
@@ -115,7 +116,7 @@ body {
   }
 
   .bio p, .goals p, .skills p, ul {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
   }
 
@@ -161,4 +162,28 @@ body {
  .bio {
   height: auto;
  }
+}
+
+
+
+
+.hero {
+  background-image: url(../Images/hero-students.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  width: 100%;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 2rem;
 }
