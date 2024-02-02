@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(../Images/hero-contact.jpeg);
+  background-image: url(../Images/hero-partners.png);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -25,19 +25,10 @@
   padding: 20px;
 }
 
-.content-section .section-title {
-  text-decoration-color: #9747ff;
-}
-
-.text-content p {
-  margin-bottom: 10px;
-}
-
-.image-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 20px;
+.partners p {
+  color: #000;
+  font-family: "Inter";
+  font-size: 1.5rem;
 }
 
 @media (min-width: 991px) {
@@ -56,27 +47,5 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-  }
-
-  .text-content,
-  .image-content {
-    flex: 1;
-  }
-
-  .text-content {
-    max-width: 48%;
-    margin-right: 2%;
-  }
-
-  .text-content h3 {
-    font-size: 2rem;
-  }
-
-  .image-content {
-    max-width: 50%;
-  }
-
-  .image-content img {
-    margin-top: 0;
   }
 }

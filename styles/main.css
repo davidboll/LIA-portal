@@ -72,6 +72,22 @@ a {
   padding-top: 40px;
 }
 
+.partners {
+  background-color: #fafafa;
+  padding: 30px 0;
+  text-align: center;
+}
+
+h3.section-title {
+  font-family: "Inter";
+  font-size: 2.25rem;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+  text-underline-offset: 16px;
+}
+
 button,
 a.link-button {
   align-self: center;
@@ -139,6 +155,14 @@ button.close:hover {
 
 .partners .section-title {
   text-decoration-color: #faff06;
+}
+
+.students-container .section-title {
+  text-decoration-color: #ce3452;
+}
+
+.students-container .section-title {
+  text-decoration-color: #ce3452;
 }
 
 h3.section-title {
