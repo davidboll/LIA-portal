@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LIA - Students</title>
+    <title>LIA - Portal</title>
     <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/partner-card.css" />
     <link rel="stylesheet" href="../styles/header-footer.css" />
     <link rel="stylesheet" href="../styles/media-query.css" />
+    <link rel="stylesheet" href="../styles/partners.css" />
+    <link rel="stylesheet" href="../styles/student-page.css">
+    <link rel="stylesheet" href="../styles/org-slider.css">
+    <link rel="stylesheet" href="../styles/student-slider.css">
+
     <script src="../scripts/jquery-3.7.1.js" defer></script>
+    <script src="../scripts/student.js" defer></script>
+    <script src="../scripts/student-slider.js" defer></script>
     <script src="../scripts/mobile-menu.js" defer></script>
-    <script src="../scripts/student-page.js" defer></script>
+    <script src="../scripts/submenu.js" defer></script>
   </head>
   <body>
     <header>
@@ -19,25 +27,47 @@
       <nav id="main-nav">
         <div id="hamburger-menu">&#9776;</div>
         <ul id="menu">
-          <li><a href="./about.html">About us</a></li>
-          <li><a href="">Contact</a></li>
-          <li class="portal-item">
-            <a href="">Portal</a>
-            <ul class="submenu">
-              <li><a href="">students</a></li>
-              <li><a href="">companies</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/about.html">About us</a></li>
+          <li><a href="../html/contact.html">Contact</a></li>
+          <li class="portal">
+            <a href="#" id="portal">Portal</a>
+            <ul class="submenu" id="submenu">
+              <li><a href="../html/student-page.html">Students</a></li>
+              <li><a href="../html/partners.html">Partners</a></li>
             </ul>
           </li>
         </ul>
       </nav>
     </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Students</h1>
+    </section>
+    <div class="headlines">
+      <h3 class="section-title">Student Panel</h3>
+      <p>Want some more info about our students? Just click them!</p>
+    </div>
+    <section class="student-wrapper">
+      <div class="student-popup-overlay">
+        <div class="student-popup">
+          <div class="sidebar"></div>
+          <div class="wrapper">
+            <div class="bio"></div>
+            <div class="div-row">
+              <div class="goals"></div>
+              <div class="skills"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <img
         class="footer-logo"
-        src="./Images/footer-logo.png"
-        alt="Footer Image"
-      />
-      <span class="footer-text">&copy; 2024</span>
+        src="../Images/footer-logo.png"
+        alt="Footer Image" />
     </footer>
   </body>
 </html>

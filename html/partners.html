@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lia - Contact</title>
+    <title>Lia - Parnters</title>
     <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/partner-card.css" />
     <link rel="stylesheet" href="../styles/header-footer.css" />
     <link rel="stylesheet" href="../styles/media-query.css" />
+    <link rel="stylesheet" href="../styles/partners.css" />
     <link rel="stylesheet" href="../styles/org-slider.css">
     <link rel="stylesheet" href="../styles/student-slider.css">
 
     <script src="../scripts/jquery-3.7.1.js" defer></script>
+    <script src="../scripts/partners.js" defer></script>
     <script src="../scripts/student-slider.js" defer></script>
     <script src="../scripts/mobile-menu.js" defer></script>
     <script src="../scripts/submenu.js" defer></script>
@@ -39,58 +41,29 @@
     </header>
     <section class="hero">
       <div class="hero-content">
-        <h1>About</h1>
+        <h1>Partners</h1>
     </section>
-    <main>
-      <div class="om-oss">
-        <img class="about-student-image" src="../Images/home_profile_2 1.png" alt="Picture of a student">
-        <h1>Who are we?</h1>
-         <hr class="underline green">
-        <p>
-          Welcome to CM Educations "Recruitment of the future" - a gamechanging platform that changes the landscape of matching interns with internships and creates meaningful relationships.
-        </p>
-        <p>
-          At CM Educations we are passionate about building bridges between education and the industy. With decades of experience in education we have discovered the critical need to make the search for a suitable internship easier for our ambitious students.
-        </p>
-        <p>
-          We believe in the power of changing the future through investments in the next  generation of developers. Trough "Recruitment of the future" we are creating ways for our students to prosper and for organizations to find the person that matches perfectly to their specific needs.
-        </p>
-        <p>
-          We look forward to being your partner in this exiting journey and to be a part of shaping the future through the next generation. <br>Welcome to CM Educations' "Recruitment of the future"!
-        </p>
-        <div class="button-container">
-          <a href="./students.html">
-              <button class="student-button">SEE STUDENTS</button>
-          </a>
-          <a href="./contact.html">
-              <button class="contact-button">CONTACT US</button>
-          </a>
-        </div>
-    </main>
 
-    <section class="students-container">
-      <h3 class="section-title">Students</h3>
-    <section class="student-slider-container">
-      <div class="student-slider">
-        <div class="student-picture active"><img src="../Images/Student-slider/Student1.png" alt="Student#1"></div>
-        <div class="student-picture next"><img src="../Images/Student-slider/student2.png" alt="Student#2"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student3.png" alt="Student#3"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student4.png" alt="Student#4"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student5.png" alt="Student#5"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student6.png" alt="Student#6"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student7.png" alt="Student#7"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student8.png" alt="Student#8"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student9.png" alt="Student#9"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student10.png" alt="Student#10"></div>
-        <div class="student-picture"><img src="../Images/Student-slider/student11.png" alt="Student#11"></div>
-        <div class="student-picture prev"><img src="../Images/Student-slider/student12.png" alt="Student#12"></div>
-          <div class="button-container">  
-            <div class="button"><i></i></div>
-            <div class="button"><i></i></div>
-        </div>
-      </div>
+    <section class="partners">
+      <h3 class="section-title">Job listings</h3>
+      <p> Here you'll find current job listings from our partners.</p>
+      <p>Click on a job listing to read more and see contact information</p>
+      <div class="partner-cards"></div>
     </section>
-  </section>
+
+    <div id="popup-overlay" class="hidden"></div>
+    <div id="partner-popup" class="hidden">
+      <div class="popup-content">
+        <img id="popup-logo" src="" alt="logo" />
+        <h3 id="popup-name"></h3>
+        <p id="popup-jobpost"></p>
+        <p id="popup-jobdescription"></p>
+        <a target="_blank" id="popup-email">
+          <button class="see-all">Contact us</button>
+        </a>
+        <button class="close" id="close-popup">Close</button>
+      </div>
+    </div>
 
     <div class="org-slider-container">
       <div class="org-slider">
