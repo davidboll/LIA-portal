@@ -100,7 +100,7 @@ $(() => {
       "React",
       "z.ibrahimovic@cmeducation.se",
       "0731231212",
-      "../Images/Student-slider/student1.png"
+      "../Images/Student-slider/Student1.png"
     ),
     new Student(
       2,
