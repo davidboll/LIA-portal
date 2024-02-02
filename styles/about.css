@@ -1,133 +1,126 @@
 :root {
-    --button-border-radius: 50px;
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter/Inter-Regular.ttf");
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter/Inter-Medium.ttf");
-    font-weight: medium;
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter/Inter-Bold.ttf");
-    font-weight: bold;
+  --button-border-radius: 50px;
 }
 
 .hero {
-    background-image: url(../Images/Hero.png);
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url(../Images/hero-about.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: 3rem;
 }
 
 main {
-    position: relative;
-
+  position: relative;
 }
 
 h1 {
-    font-size: 1.875rem;
-    text-align: center;
-    border-width: 191px;
+  font-size: 1.875rem;
+  text-align: center;
+  border-width: 191px;
 }
 
 .underline.green {
-    background-color: #448E79;
-    color: #448E79;
-    height: 8px;
-    width: 124px;
+  background-color: #448e79;
+  color: #448e79;
+  height: 8px;
+  width: 124px;
 }
 
 .om-oss {
-    width: calc(50vw - 24px);
-    /* position: relative; */
-    /* min-height: 50vw; */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 24px;
-    padding-top: 5vw;
+  width: calc(50vw - 24px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 24px;
+  padding-top: 5vw;
 }
 
 .student-button {
-    background-color: #CE3452;
-    color: #fff;
-    border: none;
-    padding: 0;
-    height: 50px;
-    width: 191px;
-    font-size: 18px;
-    border-radius: var(--button-border-radius);
-    font-weight: bold;
-    margin-right: 16px;
+  background-color: #ce3452;
+  color: #fff;
+  border: none;
+  padding: 0;
+  height: 50px;
+  width: 191px;
+  font-size: 18px;
+  border-radius: var(--button-border-radius);
+  font-weight: bold;
+  margin-right: 16px;
 }
 
 .contact-button {
-    color: #EF4E6D;
-    border: 2px solid #EF4E6D;
-    background-color: #fff;
-    padding: 0;
-    height: 50px;
-    width: 191px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: var(--button-border-radius);
+  color: #ef4e6d;
+  border: 2px solid #ef4e6d;
+  background-color: #fff;
+  padding: 0;
+  height: 50px;
+  width: 191px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: var(--button-border-radius);
 }
 
 .contact-card {
-    border: #CE3452;
-    border-radius: var(--button-border-radius);
+  border: #ce3452;
+  border-radius: var(--button-border-radius);
 }
 
 .about-student-image {
-    position: absolute;
-    height: 50vw;
-    max-height: 600px;
+  position: absolute;
+  height: 50vw;
+  max-height: 600px;
 
-    max-width: 50vw;
-    right: 0;
-    top: 0;
+  max-width: 50vw;
+  right: 0;
+  top: 0;
 }
 
 h3.section-title {
-    font-family: "Inter";
-    font-size: 2.25rem;
-    font-weight: normal;
-    padding-bottom: 30px;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-thickness: 8px;
-    text-underline-offset: 16px;
+  font-family: "Inter";
+  font-size: 2.25rem;
+  font-weight: normal;
+  padding-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+  text-underline-offset: 16px;
 }
 
 @media screen and (max-width: 991px) {
-    .about-student-image {
-        display: none;
-    }
+  .hero {
+    height: 300px;
+  }
 
-    .button-container {
-        display: flex;
-        flex-direction: column;
-    }
+  .hero-content h1 {
+    color: #fff;
+    font-size: 2rem;
+  }
 
-    .om-oss {
-        align-items: center;
-        width: auto;
-        margin: 50px;
-        padding-top: 0;
-    }
+  .about-student-image {
+    display: none;
+  }
 
-    button {
-        margin: 16px;
-    }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .om-oss {
+    align-items: center;
+    width: auto;
+    margin: 50px;
+    padding-top: 0;
+  }
+
+  button {
+    margin: 16px;
+  }
 }
