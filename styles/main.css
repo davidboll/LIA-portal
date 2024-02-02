@@ -151,6 +151,10 @@ button.close:hover {
   text-decoration-color: #faff06;
 }
 
+.students-container .section-title {
+  text-decoration-color: #ce3452;
+}
+
 @media (min-width: 991px) {
   .banner-content {
     max-width: 1200px;

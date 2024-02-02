@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lia - Parnters</title>
     <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/partner-card.css" />
     <link rel="stylesheet" href="../styles/header-footer.css" />
     <link rel="stylesheet" href="../styles/media-query.css" />
     <link rel="stylesheet" href="../styles/partners.css" />
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="../styles/student-slider.css">
 
     <script src="../scripts/jquery-3.7.1.js" defer></script>
+    <script src="../scripts/partners.js" defer></script>
     <script src="../scripts/student-slider.js" defer></script>
     <script src="../scripts/mobile-menu.js" defer></script>
     <script src="../scripts/submenu.js" defer></script>
@@ -42,26 +44,25 @@
         <h1>Partners</h1>
     </section>
 
-    <section class="content-section">
-  <h3 class="section-title">Contact us</h3>
-  <div class="container">
-    <div class="text-content">
-      <h3>How can we help you?</h3>
-      <p>Do not hesitate to get in touch with us with your questions and concerns. The best way to contact us is by email. You can also call our switchboard, and we will connect you.</p>
+    <section class="partners">
+      <h3 class="section-title">Job listings</h3>
+      <p>Click on a job listing to read more and see contact information</p>
+      <div class="partner-cards"></div>
+    </section>
 
-      <h3>Do you have general questions?</h3>
-      <p>If you have questions not related to a specific program, or are unsure who to contact, feel free to email us at our information address, or call our switchboard.
-      <br>info@cmeducations.se
-      <br>+46 8 336 015</p>
-
-      <h3>Do you have questions about a specific education program?</h3>
-      <p>If you are wondering about the start of the program, program content, or application process, it is best to contact the program leader directly. You can find the contact information below.</p>
+    <div id="popup-overlay" class="hidden"></div>
+    <div id="partner-popup" class="hidden">
+      <div class="popup-content">
+        <img id="popup-logo" src="" alt="logo" />
+        <h3 id="popup-name"></h3>
+        <p id="popup-jobpost"></p>
+        <p id="popup-jobdescription"></p>
+        <a target="_blank" id="popup-email">
+          <button class="see-all">Contact us</button>
+        </a>
+        <button class="close" id="close-popup">Close</button>
+      </div>
     </div>
-    <div class="image-content">
-      <img src="../Images/contact-image-1.jpeg" alt="Students in front of computer">
-    </div>
-  </div>
-</section>
 
     <div class="org-slider-container">
       <div class="org-slider">
