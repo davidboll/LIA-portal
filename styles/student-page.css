@@ -1,8 +1,11 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+}
+
+.headlines {
+  text-align: center;
 }
 
 .student-wrapper {
@@ -113,6 +116,7 @@ body {
 
   .bio p, .goals p, .skills p, ul {
     font-size: 15px;
+    font-weight: 300;
   }
 
   .skills ul {
