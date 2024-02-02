@@ -1,0 +1,51 @@
+.hero {
+  background-image: url(../Images/hero-partners.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  width: 100%;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 2rem;
+}
+
+.content-section .container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.partners p {
+  color: #000;
+  font-family: "Inter";
+  font-size: 1.5rem;
+}
+
+@media (min-width: 991px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero-content h1 {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  .content-section .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
