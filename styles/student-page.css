@@ -1,3 +1,24 @@
+.hero {
+  background-image: url(../Images/hero-students.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  width: 100%;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 2rem;
+}
+
 .headlines {
   padding-top: 30px;
   text-align: center;
@@ -165,28 +186,4 @@
  .bio {
   height: auto;
  }
-}
-
-
-
-
-.hero {
-  background-image: url(../Images/hero-students.png);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-content {
-  text-align: center;
-  width: 100%;
-}
-
-.hero-content h1 {
-  color: #fff;
-  font-family: "Inter";
-  font-size: 2rem;
 }
