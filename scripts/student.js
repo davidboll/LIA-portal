@@ -1,4 +1,4 @@
-$(() => {
+$(() => {  
   function Student(
     ID,
     name,
@@ -280,9 +280,33 @@ $(() => {
     ),
   ];
 
+
+  
+  function filterStudents() {
+    const selectedRoles = [];
+    
+    $(".jobCheckbox:checked").each(function () {
+      selectedRoles.push($(this).val());
+    });
+
+    $(".student-ava").each(function () {
+      const studentRole = $(this).data("role");
+
+      if (selectedRoles.length === 0 || selectedRoles.includes(studentRole)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  }
+
+  $(".jobCheckbox").on("change", filterStudents);
+
+
+
   studentArray.forEach((student) => {
     let studentElement = `
-            <div class="student-ava" >
+            <div class="student-ava" data-role="${student.education}">
             <img src=${student.image} alt="student">
             <h4>${student.name}</h4>
             </div>
